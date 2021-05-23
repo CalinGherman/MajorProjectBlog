@@ -32,7 +32,7 @@ body {
   background: #fff;
   position: relative; }
   .menu:hover .menu__month {
-    height: 190%;
+    height: 200%;
     background-color: #fff; }
   .menu:hover .btn__icon {
     transform: rotate(180deg) translateX(-2rem); }
@@ -56,15 +56,19 @@ body {
     text-transform: uppercase;
     transition: all .2s; }
     .menu__month-link, .menu__month:link, .menu__month:visited {
-      background-image: linear-gradient(to right, #753ebd, #9d7bc9);
+      background-image: linear-gradient(to left bottom, #55c57a, #7ed56f);
       -webkit-background-clip: text;
       color: transparent;
-      margin-top: 1.5rem; }
+      margin-top: 1.5rem;
+      transition: all .2s; }
+      .menu__month-link:hover, .menu__month:link:hover, .menu__month:visited:hover {
+        transform: skewY(-5deg);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #753ebd, #9d7bc9);
+  background-image: linear-gradient(to left bottom, #55c57a, #7ed56f);
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -99,8 +103,14 @@ body {
   align-items: center;
   background-color: #f7f7f7; }
 
+.current-month {
+  margin-top: 15rem;
+  background-image: linear-gradient(to left bottom, #55c57a, #7ed56f);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .content {
-  margin-top: 20rem;
+  margin-top: 10rem;
   max-width: 100rem; }
   .content__header {
     padding: 5rem 0; }
@@ -108,7 +118,7 @@ body {
       font-weight: 300;
       font-size: 3rem;
       display: inline-block;
-      background-image: linear-gradient(to right, #753ebd, #9d7bc9);
+      background-image: linear-gradient(to left bottom, #55c57a, #7ed56f);
       -webkit-background-clip: text;
       color: transparent; }
   .content__text {
