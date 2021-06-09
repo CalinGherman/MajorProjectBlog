@@ -75,6 +75,7 @@ body {
 .btn__icon {
   width: 3rem;
   height: 3rem;
+  fill: $primary-color;
   transform: translateX(2rem);
   transition: all .2s; }
 
