@@ -60,6 +60,7 @@ body {
       -webkit-background-clip: text;
       color: transparent;
       margin-top: 1.5rem;
+      padding: 0 1rem;
       transition: all .2s; }
       .menu__month-link:hover, .menu__month:link:hover, .menu__month:visited:hover {
         transform: skewY(-5deg);
@@ -75,7 +76,7 @@ body {
 .btn__icon {
   width: 3rem;
   height: 3rem;
-  fill: $primary-color;
+  fill: #55c57a;
   transform: translateX(2rem);
   transition: all .2s; }
 
